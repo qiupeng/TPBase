@@ -10,14 +10,8 @@
 ### 知识点
 
 1、MVC模式：
-						单入口文件
-							|
-							|
-					  Controller(控制器)
-					/					\
-				   /					 \
-				  /						  \
-		Model(数据库操作)					view(视图)
+
+	单入口文件，然后通过 Controller(控制器)，来决定是调用： Model(数据库操作)/ view(视图)
 
 2、建立一个单入口文件
 	index.php
@@ -45,7 +39,7 @@
 6、读取配置C('DB_HOST');
 
 7、数据库相关操作
-	//操作数据库
+	
     $db = M('user');    //实例化模型表
     $result = $db->select();    //查询结果集
     dump($result);  //tp里面的打印函数
