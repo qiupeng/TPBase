@@ -56,3 +56,5 @@
 	在IndexAction控制器中index方法里面，我们使用： $this->display();   //显示模板
 	系统会自动去找：Index/Tpl/Index/index.html
 	
+> 8、 zend studio 出现rejected - non-fast-forward错误
+	http://blog.csdn.net/chenshun123/article/details/46756087
