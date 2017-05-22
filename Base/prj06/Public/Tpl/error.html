@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>错误页面</title>
+	<script>
+		window.onload = function () {
+			setTimeout(function(){
+				window.location.href = '<?php echo __APP__;  ?>';
+			}, 5000);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p><?php echo $e['message']; ?></p>
+		<div>
+			页面将在5秒钟跳转，或者点击<a href="<?php echo __APP__;  ?>">返回首页</a>
+		</div>
+	</div>
+</body>
+</html>
