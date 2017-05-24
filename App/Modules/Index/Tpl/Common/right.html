@@ -1,0 +1,20 @@
+<div class='main-right'>
+
+			<!-- 热门博文 -->
+			<!-- {:W('Hot')} -->
+			<dl>
+				<dt>热门博文</dt>
+				<hot limit="5">
+					<dd>
+						<a href="{$url}">{$title}</a>
+						<span>({$click})</span>
+					</dd>
+				</hot>
+			</dl>
+
+			<!-- 最新博文 -->
+			{:W('New',array('limit' => 5))}
+
+			<!-- 友情链接 -->
+			{:W('Url')}
+		</div>
